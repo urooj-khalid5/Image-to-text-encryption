@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Text Encryption</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <h2 id="heading">Image to Text Encryption</h2>
+        <div class="file-input">
+            <label for="inputImage" class="custom-file-upload">
+                Choose Image
+            </label>
+            <input type="file" id="inputImage" accept="image/*">
+        </div>
+        <br>
+        <label for="secretText">Enter Plain Text:</label>
+        <input type="text" id="secretText" placeholder="Enter Text here">
+        <br>
+        <label for="secretKey">Enter Secret Key:</label>
+        <input type="text" id="secretKey" placeholder="Enter Key here">
+        <div class="btn-group">
+            <button onclick="encrypt()">Encrypt</button>
+        </div>
+        <textarea id="outputText" readonly placeholder="Your Encrypted text"></textarea>
+        <div class="btn-group">
+            <button onclick="decrypt()">Decrypt</button>
+        </div>
+        <div class="decrypted-image-container">
+            <img id="outputImage" class="decrypted-image">
+        </div>
+        <div class="decrypted-text-container">
+            <div id="decryptedInfo">
+                <p id="outputSecret"></p>
+                <p id="outputKey"></p>
+            </div>
+        </div>
+        <script src="crypto-js.js"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>

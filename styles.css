@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url('./images/bg5.webp');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    margin: 0;
+    padding: 0;
+}
+.content {
+    text-align: center;
+}
+
+.btn-group {
+    margin-top: 10px;
+}
+
+.btn-group button {
+    margin: 5px;
+}
+
+#outputText,
+#outputImage,
+#outputSecret,
+#outputKey {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input[type="file"],
+input[type="text"],
+textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-group {
+    margin-bottom: 10px;
+}
+
+.btn-group button {
+    padding: 12px 57px;
+    background: linear-gradient(to left, #1e2a78, #005aa7);
+    color: rgb(252, 246, 246);
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .btn-group button:hover {
+    background-color: #80bfff; 
+  }
+  #decryptedInfo {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  #decryptedInfo p {
+    margin: 5px 0;
+  }
+
+#outputText {
+    height: 200px;
+}
+
+#outputImage {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+p {
+    margin-top: 10px;
+}
+#heading {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1420c2; 
+    text-align: center;
+    margin-top:60px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0 0 19px #eaeff0; /* White border */
+}
+  
+  .decrypted-image-container {
+    width: 300px;
+    height: auto; 
+  }
+  
+  .decrypted-image {
+    max-width: 100%; 
+    height: auto; 
+  }
+  
+  .decrypted-text-container {
+    width: 100%; 
+    text-align: center; 
+    margin-top: -12px;
+  }
+.file-input {
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  .custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to left, #1e2a78, #005aa7);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1420c2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  #outputSecret, #outputKey {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #1420c2;
+    margin-top: 10px; 
+    font-weight: bold;
+  }
+  
+  
+  
